@@ -1,0 +1,38 @@
+{
+  "name": "pr-review-toolkit",
+  "version": "1.0.0",
+  "description": "Codex migration of Anthropic's PR Review Toolkit with specialized review skills for comments, tests, errors, types, code quality, and simplification.",
+  "author": {
+    "name": "Tyler Angelier",
+    "email": "tylerangelier@gmail.com",
+    "url": "https://github.com/TylerAngelier"
+  },
+  "homepage": "https://github.com/TylerAngelier/pr-review-toolkit",
+  "repository": "https://github.com/TylerAngelier/pr-review-toolkit",
+  "license": "LicenseRef-Anthropic-Commercial-Terms",
+  "keywords": [
+    "codex",
+    "plugin",
+    "pull-request",
+    "code-review",
+    "testing"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "PR Review Toolkit",
+    "shortDescription": "Focused Codex skills for thorough PR review.",
+    "longDescription": "A Codex Plugin migration of Anthropic's Claude Code PR Review Toolkit. It provides specialized review skills for comments, test coverage, silent failures, type design, general code quality, code simplification, and coordinated PR review.",
+    "developerName": "Tyler Angelier",
+    "category": "Productivity",
+    "capabilities": [
+      "Review",
+      "Code Quality",
+      "Subagents"
+    ],
+    "defaultPrompt": [
+      "Use $review-pr to review my current changes.",
+      "Use $silent-failure-hunter to inspect error handling.",
+      "Use $pr-test-analyzer to find critical test gaps."
+    ]
+  }
+}
